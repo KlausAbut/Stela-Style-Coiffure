@@ -1,0 +1,373 @@
+*, *::before, *::after{ 
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+
+}
+
+body{
+    font-family: 'Source Sans pro', sans-serif;
+    line-height: 1.625;
+    margin: 0;
+    color: #6f6f6f;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.header{
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.92) 15.5%, rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4) 100%),
+        url(image/img2.jpg) center center / cover no-repeat;
+    color: #fff;
+}
+
+.topbar{ 
+    display: block;
+    font-size: 19px;
+    text-align: center;
+    color: #a45c5c;
+    padding: 18px 0;
+}
+
+.menu-item{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.logo{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.topbar a:hover{
+    color: #c89446;
+}
+
+.baseline{
+    display: block;
+    padding: 50px 0 60px 0;
+    text-align: center;
+}
+
+.baseline-welcome{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    letter-spacing: 1;
+}
+
+.baseline-name{
+    display: block;
+    font-size: 30px;
+    line-height: 0,5;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #a45c5c;
+
+}
+
+.menu-button{
+    border: solid 1px #c89446;
+    padding: 7px 10px;
+
+}
+
+.container-small{
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.container{
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.home-section{
+    padding-top: 9px;
+}
+
+.block{
+    margin-bottom: 30px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.title{
+    font-size: 1.75rem;
+    letter-spacing: 2.5px;
+    line-height: 1;
+    color: #a45c5c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.title::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: #c89446;
+    margin-bottom: 1rem;
+}
+
+
+.block-centered{
+    text-align: center;
+}
+
+.pic{
+    background: 
+    url(image/img9jpg.jpg) center center / cover no-repeat;
+    color: #fff; 
+}
+
+.container-pic{
+    display: flexbox;
+    margin: 10px auto;
+    padding: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.all-tarifs{
+    padding-left: 120px;
+    position: relative;
+}
+
+.tarifs-title{
+    font-size: 1,25rem;
+    font-weight: bold;
+    margin-bottom: 0.75;
+    color: #000;
+}
+
+.tarifs-price{
+    font-size: 1.2rem;
+    color: #c89446;
+}
+
+.tarifs-left{
+    padding-left: 20px;
+    position: relative;
+    
+}
+
+.reservation{
+    background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.92) 15.5%, rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4) 100%),
+    url(image/img6.jpg) center center / cover no-repeat;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.reservation-title{
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.reservation input, .reservation select{
+    padding: 0,5rem;
+    width: 100%;
+    margin-bottom: 10px;
+    border: solid #6f6f6f;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 0,875rem;
+    height: 40px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: background .3s, border-color .3s;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.reservation selctor{
+    background: no-repeat right 0.5rem center;
+}
+
+.reservation input:focus, .reservation selctor:focus{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #c89446;
+}
+
+.reservation .button{
+    width: 100%;
+}
+
+.button{
+    font-weight: 600;
+    font-size: 0,875rem;
+    color: #fff;
+    background: #c89446;
+    border: none;
+    border: solid 1px transparent;
+    padding: 11px 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover{
+    background: transparent;
+    border: solid 1px #c89446;
+}
+
+.reservation .block-centered .block-body{
+    max-width: 1225px;
+}
+
+.map{
+    width: 100%;
+    height: 450px;
+}
+
+.footer{
+    background: #383838;
+    font-weight: 300;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer a{
+    text-decoration: underline;
+}
+
+.footer a:hover{
+    color: #c89446;
+}
+
+.footer-title{
+    color: #a45c5c;
+    margin-bottom: 1,25rem;
+    font-weight: bold;
+}
+
+.footer-column{
+    margin-bottom: 15px;
+}
+
+
+
+
+@media only screen and (min-width: 600px){
+    html{
+        font-size: 16px;
+    }
+
+    .logo{
+        margin-bottom: 0;
+    }
+
+    .baseline{
+        padding: 125px 0 227px;
+    }
+
+    .baseline-name{
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+
+    .baseline-welcome{
+        font-size: 50px;
+    }
+
+    .topbar{
+        display: flex;
+        max-width: 1150px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .menu-button{
+        border: solid 1px #c89446;
+        padding: 7px 10px;
+
+    }
+   
+}
+
+@media only screen and (min-width: 400px){
+    .block-left{
+        display: flex;
+        align-items: center;
+    } 
+
+    .block-left .block-img{
+        width: 20px;
+        flex: none;
+        margin-left: 15px;
+    }
+
+    .block-left .block-body{
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+    .title{
+        margin-bottom: 1,2rem;
+    }
+
+    .title::before{
+        margin-bottom: 20px;
+    }
+    
+    .all-tarifs{
+        padding: 20px 0;
+        display: block;
+        
+        
+    }
+    .tarifs-left{
+        padding-left: 0;
+        text-align: center; 
+    }
+    .container-pic{
+        flex: none;
+        margin: 10px auto;
+        padding: 200px;
+        width: 100%;
+        height: auto;
+    }
+
+    .reservation{
+        padding: 50px 0;
+    }
+
+    .reservation-form-row{
+        margin: 64px 0;
+    }
+
+    .footer-columns{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column{
+        width: 290px;
+        flex: none;
+        margin-right: 50px;
+    }
+
+    .footer-column:first-child{
+        width: 450px;
+    }
+
+    .footer-column:last-child{
+        margin-right: 0;
+    }
+}    
