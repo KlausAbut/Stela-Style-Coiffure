@@ -147,23 +147,52 @@ img{
     position: relative;
 }
 
-.tarifs-title{
-    font-size: 1,25rem;
-    font-weight: bold;
-    margin-bottom: 0.75;
-    color: #000;
+/* --- Conteneur des 2 colonnes --- */
+.all-tarifs {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.tarifs-price{
-    font-size: 1.2rem;
-    color: #c89446;
+/* Chaque colonne prend 50% */
+.all-tarifs .tarifs-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.tarifs-left{
-    padding-left: 20px;
-    position: relative;
-    
+/* Carte tarif */
+.tarifs-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+.tarifs-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+.tarifs-price {
+  font-size: 1.2rem;
+  color: #c89446;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* --- Mobile : une seule colonne --- */
+@media (max-width: 768px) {
+  .all-tarifs {
+    flex-direction: column;
+  }
+  .all-tarifs .tarifs-col {
+    width: 100%;
+  }
+}
+
 
 .reservation{
     background: 
